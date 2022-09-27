@@ -1,0 +1,3 @@
+2022-07-04 09:10:48 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "AREA" not found (this database is empty); SQL statement:
+select * from Area [42104-212]

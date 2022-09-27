@@ -1,0 +1,53 @@
+{
+  "type": "record",
+  "name": "FootbalData",
+  "namespace": "sendData",
+  "fields": [
+    {
+      "name": "count",
+      "type": "int"
+    },
+    {
+      "name": "filters",
+      "type": "null"
+    },
+    {
+      "name": "areas",
+      "type": {
+        "type": "array",
+        "items": [
+          {
+            "name": "Teams",
+            "type": "record",
+            "fields": [
+              {
+                "name": "id",
+                "type": "int"
+              },
+              {
+                "name": "areaId",
+                "type": "int"
+              },
+              {
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "name": "address",
+                "type": "string"
+              },
+              {
+                "name": "clubColors",
+                "type": "string"
+              }]},
+              {
+                "name": "parentArea",
+                "type": "string"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
